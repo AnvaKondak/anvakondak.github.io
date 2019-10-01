@@ -274,13 +274,13 @@ font-size: 1.5em; /*default font size*/
 @media (min-width: 1430px) {
  .setp {
   color: white;
-  opacity: 0;
+/*  opacity: 0;*/
   transition: 1s ease-in-out;
 }
-
+/*
 .setp.show{
   opacity: 1;
-}
+}*/
 /*
 .setp1 {
   color: black;
@@ -294,15 +294,15 @@ font-size: 1.5em; /*default font size*/
 */
 .setp3 {
   color: black;
-  opacity: 0;
+  opacity: 1;
   transition: .9s ease-in-out;
     /* width:50%; */
 }
-
+/*
 .setp3.show{
   opacity: 1;
     /* width:100%; */
-}
+}*/
 }
 
 .nav.navbar-nav li a {
