@@ -222,10 +222,67 @@ a:focus-visible {
   line-height: 1.6;
 }
 
-.coming-soon {
-  margin: 25px 0 18px;
+.project {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 28px;
+  margin-top: 8px;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tab-panel .project-name {
+  margin: 0 0 10px;
   font-family: Fraunces, Georgia, serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.project-caption {
+  margin: 0;
+  color: #50344a;
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.project-tech {
+  margin: 14px 0 0;
+  color: var(--plum-soft);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.93rem;
+  font-weight: 600;
+}
+
+.project-links a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.project-links a:hover {
+  color: var(--plum-soft);
+}
+
+.project-soon {
+  color: var(--plum-soft);
+  font-weight: 500;
 }
 
 .contact-list {
@@ -354,6 +411,11 @@ a:focus-visible {
   .contact-list a {
     flex-direction: column;
     gap: 3px;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 }
 
