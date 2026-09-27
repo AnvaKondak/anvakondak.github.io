@@ -1,4 +1,3 @@
-# anvakondak.github.io
-Parallax-themed responsive portfolio website built with Bootstrap, HTML, CSS and JavaScript. 
+# Anva Kondak Portfolio
 
-This is an older version of my portfolio. Latest portfolio can be found at: `anvakondak.com`
+A responsive personal portfolio built with HTML, CSS, and a small amount of JavaScript. It includes About, Projects, and Contact tabs.
