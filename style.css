@@ -280,11 +280,6 @@ a:focus-visible {
   color: var(--plum-soft);
 }
 
-.project-soon {
-  color: var(--plum-soft);
-  font-weight: 500;
-}
-
 .contact-list {
   display: grid;
   gap: 0;
