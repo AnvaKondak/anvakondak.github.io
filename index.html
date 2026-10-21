@@ -93,7 +93,8 @@
         <div class="project-body">
           <h3 class="project-name">After Rain: Meditation App</h3>
           <p class="project-caption">A gentle iOS app for practicing RAIN meditation.</p>
-          <p class="project-caption">I've been meditating for a long time, but I've seen the most progress with RAIN (Recognize, Allow, Investigate, Nurture), a practice created by Michele McDonald and shared widely by Tara Brach. I built the After Rain app as a free tool for myself and anyone else who finds RAIN helpful and wants a more consistent practice. As you move through the four steps, a lotus slowly blooms in soft, calming colors, and your progress is tracked over time.</p>
+          <p class="project-caption">I've been meditating for a long time, but I've seen the most progress with RAIN (Recognize, Allow, Investigate, Nurture), a practice created by Michele McDonald and shared widely by Tara Brach. I built the After Rain app as a free tool for myself and anyone else who finds RAIN helpful and wants a more consistent practice.</p>
+          <p class="project-caption">Sessions are stored on the device in IndexedDB, so the app works fully offline: on the web, a Workbox service worker caches the entire app so that it opens instantly even with no connection, and the iOS version wraps the same React code with Capacitor. Backups export as a versioned JSON file, and imports are validated and restored in a single transaction so a bad file can’t corrupt saved data.</p>
           <p class="project-tech">React · TypeScript · Vite · Capacitor · IndexedDB · Web&nbsp;Audio</p>
           <ul class="project-links">
             <li><a href="https://after-rain-smoky.vercel.app" target="_blank" rel="noopener noreferrer">Try it on the web <span aria-hidden="true">↗</span></a></li>
