@@ -8,7 +8,8 @@
   --line: rgb(64 37 60 / 24%);
   font-family: "DM Sans", sans-serif;
   color: var(--plum);
-  background: var(--pink);
+  /* The light pink at the top of the page, so Safari's top bar and overscroll match it. */
+  background: #f9c4d8;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
