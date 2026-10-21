@@ -324,6 +324,10 @@ a:focus-visible {
   line-height: 1.75;
 }
 
+.project-caption + .project-caption {
+  margin-top: 12px;
+}
+
 .project-tech {
   margin: 14px 0 0;
   color: var(--plum-soft);
