@@ -8,8 +8,8 @@
   --line: rgb(64 37 60 / 24%);
   font-family: "DM Sans", sans-serif;
   color: var(--plum);
-  /* The light pink at the top of the page, so Safari's top bar and overscroll match it. */
-  background: #f9c4d8;
+  /* The color at the top of the page (pink under the star veil), so Safari's top bar and overscroll match it. */
+  background: #c99dad;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,6 +20,7 @@
 }
 
 body {
+  position: relative;
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
@@ -34,11 +35,15 @@ a {
   font: inherit;
 }
 
+/* Scrolls with the page: a fixed layer at the top makes Safari paint a solid strip
+   behind the status bar. */
 .sky {
-  position: fixed;
+  position: absolute;
   inset: 0;
   overflow: hidden;
   pointer-events: none;
+  /* Keeps the stars a soft veil over the page, as when this layer was fixed. */
+  isolation: isolate;
 }
 
 .star-field {
