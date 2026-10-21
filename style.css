@@ -234,6 +234,68 @@ a:focus-visible {
   margin-top: 56px;
 }
 
+.project-zoom {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+.project-zoom:focus-visible {
+  outline: 2px solid var(--plum);
+  outline-offset: 5px;
+  border-radius: 12px;
+}
+
+.lightbox {
+  width: min(94vw, 1180px);
+  max-width: none;
+  max-height: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+}
+
+.lightbox[open] {
+  animation: arrive 220ms ease-out both;
+}
+
+.lightbox::backdrop {
+  background: rgb(64 37 60 / 72%);
+  backdrop-filter: blur(3px);
+}
+
+.lightbox-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 86vh;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -52px;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  color: var(--plum);
+  background: var(--moon);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lightbox-close:focus-visible {
+  outline: 2px solid var(--moon);
+  outline-offset: 3px;
+}
+
 .project-image {
   display: block;
   width: 100%;
