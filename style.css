@@ -230,6 +230,10 @@ a:focus-visible {
   margin-top: 8px;
 }
 
+.project + .project {
+  margin-top: 56px;
+}
+
 .project-image {
   display: block;
   width: 100%;
