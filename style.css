@@ -280,6 +280,10 @@ a:focus-visible {
   text-underline-offset: 3px;
 }
 
+.project-soon {
+  color: var(--plum-soft);
+}
+
 .project-links a:hover {
   color: var(--plum-soft);
 }
