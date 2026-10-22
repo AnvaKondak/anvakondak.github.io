@@ -231,7 +231,7 @@ a:focus-visible {
 .project {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  align-items: center;
+  align-items: start;
   gap: 28px;
   margin-top: 8px;
 }
